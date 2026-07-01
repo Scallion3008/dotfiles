@@ -1,0 +1,8 @@
+font=BlexMono Nerd Font Mono 10
+default-timeout=5000
+
+[urgency="critical"]
+# Critical notifications are red and don't time out.
+default-timeout=0
+background-color=#900000ff
+border-color=#ad0000ff
