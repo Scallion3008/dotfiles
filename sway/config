@@ -6,6 +6,8 @@ include /etc/sway/config.d/*
 #
 # Read `man 5 sway` for a complete reference.
 
+workspace_layout tabbed
+
 # Autostart notification daemon
 exec mako
 
@@ -25,13 +27,24 @@ set $menu fuzzel
 
 #
 ### Display configuration
+
+# No external monitor
+output eDP-1 mode 2560x1600@240Hz scale 1.35 pos 0 0
+
+# Home setup
 output DP-2 mode 1920x1080@60Hz scale 1 pos 0 0
 output DP-1 mode 2560x1440@180Hz scale 1 pos 1920 0
 output eDP-2 mode 2560x1600@240Hz scale 1.35 pos 4480 0
 
+# ERC monitor config
+output HDMI-A-1 mode 1920x1800@60Hz scale 1 pos 0 0
+output eDP-1 mode 2560x1600@240Hz scale 1.35 pos 0 1080
+
 #
 # Wallpaper
 output * bg /home/ada/Pictures/wallpaper-1-edited.jpg fill
+# output * bg "/home/ada/Pictures/sex for five whole days.jpg" fill
+
 #
 # Example configuration:
 #
